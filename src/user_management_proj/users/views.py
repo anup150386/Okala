@@ -1,9 +1,9 @@
-from django.shortcuts import render
-from rest_framework import viewsets
 from rest_framework.views import APIView
-from rest_framework.response import Response
-from .serializers import UserSerializer, ProjectSerializer
+from rest_framework.views import APIView
+
 from .models import User, Project
+from .serializers import UserSerializer, ProjectSerializer
+
 
 class UserViewSet(APIView):
     queryset = User.objects.all()
