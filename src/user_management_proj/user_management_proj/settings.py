@@ -53,7 +53,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'user_management_proj.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -78,9 +77,13 @@ WSGI_APPLICATION = 'user_management_proj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+'ENGINE': 'django.db.backends.mysql',
+'NAME': 'sniper',
+'USER': 'root',
+'PASSWORD': 'Secretworld123#',
+'HOST':'localhost',
+'PORT':'3306',
+}
 }
 
 
