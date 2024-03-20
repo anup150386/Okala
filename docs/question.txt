@@ -1,0 +1,9 @@
+Create an online repository (GitHub)
+defining a simple containerised application built on docker microservices,
+that can easily be deployed in a local environment.
+With a single deployment the application must stand up by itself.
+It must also manage connections to its own isolated database using a simple RESTful
+API built in FastAPI, allowing for simple CRUD operations on two objects “users” and “projects”.
+The relationship between these two objects should be considered many-to-many.
+The “projects” table contains standardised polygon geographic information (with reference system ESPG : 4326)
+and basic information about a project including name and description. A “user” will have a username and expertise.
